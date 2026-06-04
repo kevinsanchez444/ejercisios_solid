@@ -1,7 +1,10 @@
+package tipo_pato;
+
+import clase_abstracta.Pato;
 public class PatoDeCasa extends Pato {
     public PatoDeCasa() {
-        comportamientoDeVuelo = new SinVuelo();
-        comportamientoDeGraznido = new Mudo();
+        establecerComportamientoDeVuelo("Sin vuelo");
+        establecerComportamientoDeGraznido("Mudo");
     }
 
     @Override

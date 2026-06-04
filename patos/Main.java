@@ -1,3 +1,10 @@
+
+import clase_abstracta.Pato;
+import tipo_pato.PatoMallard;
+import tipo_pato.PatoMandarin;
+import tipo_pato.PatoDeHule;
+import tipo_pato.PatoDeCasa;
+
 public class Main {
 	public static void main(String[] args) {
 		Pato patoMallard = new PatoMallard();
@@ -9,13 +16,8 @@ public class Main {
 		mostrarPato(patoMandarin);
 		mostrarPato(patoDeHule);
 		mostrarPato(patoDeCasa);
-
-		System.out.println("\nCambiando comportamiento en tiempo de ejecución para el pato de casa:");
-		patoDeCasa.establecerComportamientoDeVuelo(new VolarConAlas());
-		patoDeCasa.establecerComportamientoDeGraznido(new Quack());
-		patoDeCasa.emprenderVuelo();
-		patoDeCasa.hacerQuack();
 	}
+
 
 	private static void mostrarPato(Pato pato) {
 		pato.dibujar();

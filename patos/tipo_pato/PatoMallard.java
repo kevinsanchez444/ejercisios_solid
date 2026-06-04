@@ -1,7 +1,10 @@
+package tipo_pato;
+
+import clase_abstracta.Pato;
 public class PatoMallard extends Pato {
     public PatoMallard() {
-        comportamientoDeVuelo = new VolarConAlas();
-        comportamientoDeGraznido = new Quack();
+        establecerComportamientoDeVuelo("Volar con alas");
+        establecerComportamientoDeGraznido("Quack");
     }
 
     @Override
